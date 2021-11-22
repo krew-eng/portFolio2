@@ -9,13 +9,17 @@
         background-size: cover;
         width: 100%;
         height: 100%;
+        padding: 15px 30px;
+        box-sizing: border-box;
         .upper-text{
             text-align: center;
             @include upperText;
         }
         .text-inside{
+            width: 50%;
             h1{
                 @include header1; 
+                line-height: 35px;
             }
             .inner-text{
                 @include innerText;
