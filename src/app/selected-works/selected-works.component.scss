@@ -1,0 +1,32 @@
+.back{
+    background-color: #f6ede2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    align-self: center;
+  
+    .container{
+        background: url('../../assets/images/selectedWorks/background.png');
+        background-size: contain;
+        text-align: center;
+        width: 500px;
+        height: 500px;
+    
+        
+
+        .img{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            margin-left: 20%;
+        }
+
+        img{
+            width: 50%;
+        }
+        
+    }
+}
