@@ -14,10 +14,14 @@
         background-size: contain;
         text-align: center;
         width: 95vh;
-          height: 95vh;
+        height: 95vh;
+        
 
         p{
-            margin-bottom: 25%;
+            @include upperText;
+            padding-bottom: 18%;
+            padding-left: 7%;
+            text-align: left;
         }
     
         .content{
@@ -25,30 +29,48 @@
         display: flex;
 
         .img{
-            margin-left: 10%;
-            padding: 0;
+            // margin-left: 10%;
+            padding-left: 7%;
             display: flex;
             flex-direction: column;
 
 
             img{
-                width: 100%;
+                // padding-left: 15%;
+                width: 110%;
             }
         }
 
         .text {
 
             text-align:left ;
-            padding-left: 4%;
+            padding-left: 11%;
 
-            h1{
+            .space{
+                height: 50%;
+            }
+
+            h2:nth-child(2){
                 @include header1;
+                font-weight: normal;
+                margin: auto;
+            }
+
+            h2:nth-child(3){
+                @include header1;
+                margin: auto;
+
             }
             p{
                 @include innerText;
+                margin: auto;
+                padding-bottom: 12%;
+                padding-left: 0;
+                padding-right: 5%;
             }
-            span{
+            .site{
                 @include lastText;
+                padding-top: 2%;
             }
         }
 
