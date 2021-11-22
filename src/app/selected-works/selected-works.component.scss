@@ -1,18 +1,20 @@
+@import '../../assets/reset';
+
 .back{
     background-color: #f6ede2;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 500px;
-    height: 500px;
+    width: 95vh;
+    height: 95vh;
     margin: auto;
   
     .container{
         background: url('../../assets/images/selectedWorks/background.png');
         background-size: contain;
         text-align: center;
-        width: 500px;
-        height: 500px;
+        width: 95vh;
+          height: 95vh;
 
         p{
             margin-bottom: 25%;
@@ -30,7 +32,23 @@
 
 
             img{
-                width: 80%;
+                width: 100%;
+            }
+        }
+
+        .text {
+
+            text-align:left ;
+            padding-left: 4%;
+
+            h1{
+                @include header1;
+            }
+            p{
+                @include innerText;
+            }
+            span{
+                @include lastText;
             }
         }
 
