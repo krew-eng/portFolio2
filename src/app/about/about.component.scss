@@ -1,0 +1,28 @@
+@import '../../assets/reset';
+.back{
+    background-color: #f6ede2;
+    height: 95vh;
+    width: 95vh;
+    margin: auto;
+    .container{
+        background-image: url(../../assets/images/aboutMe/background.png);
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        .upper-text{
+            text-align: center;
+            @include upperText;
+        }
+        .text-inside{
+            h1{
+                @include header1; 
+            }
+            .inner-text{
+                @include innerText;
+            }
+            .last-text{
+                @include lastText;
+            }
+        }
+    }
+}
