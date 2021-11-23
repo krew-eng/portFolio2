@@ -1,0 +1,82 @@
+@import '../../assets/reset';
+
+.back{
+    background-color: #f6ede2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95vh;
+    height: 95vh;
+    margin: auto;
+  
+    .container{
+        background: url('../../assets/images/education/background.png');
+        background-size: contain;
+        text-align: center;
+        width: 95vh;
+        height: 95vh;
+        
+
+        p.art{
+            @include upperText;
+            padding-bottom: 10%;
+            padding-left: 7%;
+            text-align: center;
+        }
+    
+        .content{
+
+        display: flex;
+
+        .edu{
+            width: 60%;
+            h2{
+                @include header1;
+                margin: 0;
+                padding-left: 30%;
+                text-align: right;
+                font-size: 4rem;
+            }
+           
+        }
+        
+        .text {
+            width: 40%;
+            text-align:left ;
+            padding-left: 6%;
+            p{
+                @include innerText;
+                margin: auto;
+                padding-bottom: 5%;
+                padding-left: 0;
+                padding-right: 5%;
+            }
+
+            .year{
+                font-weight: bolder;
+                font-size: 80%;
+                padding: 0;
+                padding-top: 5%;
+
+            }
+            .header{
+                font-weight: bolder;
+                padding-bottom: 1%;
+            }
+            .line{
+                // height: 1px;
+                border: 1px black solid;
+                width: 70%;
+            }
+                      
+            
+            .site{
+                @include lastText;
+                padding-top: 2%;
+            }
+        }
+
+        
+    }
+    }
+}
