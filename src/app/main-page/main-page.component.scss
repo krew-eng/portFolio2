@@ -62,18 +62,12 @@
 
     .links{
         width: 40vw;
-        //display: flex;
-        //flex-wrap: wrap;
-        //justify-content: space-between;
-        //align-items: flex-end;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-column-gap: 20px;
         grid-row-gap: 20px;
         .link{
-            //width: 95%;
-            //height: 95%;
             box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.267);
             padding: 0;
             margin: 0;
