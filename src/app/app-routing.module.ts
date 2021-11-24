@@ -8,11 +8,11 @@ import { SelectedWorksComponent } from './selected-works/selected-works.componen
 
 const routes: Routes = [
   { path: '', redirectTo: '/main', pathMatch: 'full' },
-  { path: 'main', component:  MainPageComponent},
-  { path: 'about', component:  AboutComponent},
-  { path: 'education', component: EducationComponent },
-  { path: 'project', component:  ProjectComponent},
-  { path: 'selected-works', component: SelectedWorksComponent }
+  { path: 'main', component:  MainPageComponent, data: { animation: 'HomePage'}},
+  { path: 'about', component:  AboutComponent, data: { animation: 'AboutPage' }},
+  { path: 'education', component: EducationComponent, data: { animation: 'EducationPage' } },
+  { path: 'project', component:  ProjectComponent, data: { animation: 'ProjectPage' }},
+  { path: 'selected-works', component: SelectedWorksComponent, data: { animation: 'WorksPage' } }
 ];
 
 @NgModule({
