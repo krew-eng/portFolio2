@@ -1,18 +1,18 @@
 <div class="back">
     <div class="container">
         <div class="upper-text">Art Director / Designer Graphic</div>
-        <div class="content">
-            <div class="upper-small">
+        <div class="content" >
+            <div class="upper-small" @animationLeftFirst *ngIf="isVisible">
                 <p class="inner-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum exercitationem velit atque recusandae quos nisi tempora laboriosamt.</p>
                 <img src="../../assets/images/latestProject/photos/man.png">
             </div>
-            <div class="upper-large">
+            <div class="upper-large" @animationRightSecond *ngIf="isVisible">
                 <img src="../../assets/images/latestProject/photos/meal.png">
             </div>
-            <div class="down-small">
+            <div class="down-small"  @animationLeftSecond *ngIf="isVisible">
                 <img src="../../assets/images/latestProject/photos/girls.png">
             </div>
-            <div class="down-large">
+            <div class="down-large" @animationRightFirst *ngIf="isVisible">
                 <h1><span>Latest</span> <br> Project</h1>
                 <p class="last-text">www.yoursite.com</p>
             </div>
