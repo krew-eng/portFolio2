@@ -9,15 +9,24 @@ import { trigger, transition, style, animate } from '@angular/animations';
     trigger('animeHeader', [
     transition('void => *', [
       style({ position: 'relative',
-      transform: 'scale(0,2);rotate(180deg)'}),
-      animate('300 ease-in-out', style({ transform: 'scale(1) rotate(0deg)'})), 
+      transform: 'scale(0.5) rotate(180deg)'}),
+      animate('2s ease-in-out', style({ transform: 'scale(1) rotate(0deg)' })), 
     ]),
+    
+  ]),
+  trigger('animeText', [
+    transition('void => *', [
+      style({ position: 'relative',
+      top: '-100%'}),
+      animate('3s ease-in-out', style({ top:'0%' })), 
+    ]),
+    
   ]),
     
   ]
 })
 export class EducationComponent implements OnInit {
-  isLoaded:any = true;
+  isLoaded:any = false;
   constructor() { }
 
   ngOnInit(): void {

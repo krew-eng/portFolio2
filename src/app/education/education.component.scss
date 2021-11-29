@@ -46,6 +46,7 @@
             text-align:left ;
             padding-left: 6%;
             line-height: 110%;
+            overflow: hidden;
             p{
                 @include innerText;
                 margin: auto;
