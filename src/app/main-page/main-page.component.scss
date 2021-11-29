@@ -1,8 +1,14 @@
 @import '../../assets/reset';
 
+@mixin forPics {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
 .container{
-    // margin-top: 30px;
     display: flex;
     justify-content: space-evenly;
     @media screen and (max-width: 768px) {
@@ -12,88 +18,138 @@
         width: 40vw;
         height: calc(40vw + 20px);
         background-color: #f6ede2;
+        position: relative;
+        overflow: hidden;
         @media screen and (max-width: 768px) {
             width: 80vw;
           }
-        .back{
-            width: 100%;
-            height: 100%;
-            background-image: url(../../assets/images/portfolio/background.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            padding: 15px 30px;
-            position: relative;
+          .red {
+            @include forPics;
+            background-image: url(../../assets/images/portfolio/elements/red.png);
+            animation: appearing 3s linear forwards;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            @keyframes appearing {
+              to { 
+                 opacity: 1;
+             }
+            }
             @media screen and (max-width: 768px) {
+              background-position-x: center;
+            }
+          }
+          .yellow {
+              @include forPics;
+              background-image: url(../../assets/images/portfolio/elements/yellow.png);
+              top: -100%;
+              left: 0;
+              @media screen and (max-width: 768px) {
                 background-position-x: center;
               }
-            @media screen and (max-width: 540px) {
-                padding: 5px 10px;
+              animation: coming 3s linear forwards;
+            @keyframes coming {
+              to { 
+                 top: 0;
+             }
+            }
+          }
+            .green {
+                @include forPics;
+                background-image: url(../../assets/images/portfolio/elements/green.png);
+                top: 0;
+                right: -100%;
+                animation: coming-right 3s linear forwards;
+            @keyframes coming-right {
+              to { 
+                 right: 0;
+             }
+            }
+                @media screen and (max-width: 768px) {
+                  background-position-x: center;
               }
-            .header{
-                display: flex;
-                justify-content: space-between;
-                height: 8%;
-                img{
-                    height: 100%;
-
-                }
-                .upper-text{
-                    @include upperText;
-                }
             }
-            .main-part{
-                display: flex;
-                justify-content: space-between;
-                text-align: left;
-                padding-top: 30px;
-                align-items: flex-start;
-                h1{
-                    @include header1; 
-                    width: 30%;
-                    text-align: left;
-                    margin: 0;
-                    padding-left: 5%;
-                    @media screen and (max-width: 900px) {
-                        font-size: 32px;
-                      }
-                    @media screen and (max-width: 375px) {
-                    font-size: 100%;
+                .back{
+                  width: 100%;
+                  height: 100%;
+                  background-image: url(../../assets/images/portfolio/elements/photo.png);
+                  background-size: contain;
+                  background-repeat: no-repeat;
+                  padding: 15px 30px;
+                  position: absolute;
+                  @media screen and (max-width: 768px) {
+                      background-position-x: center;
                     }
-                }
-                .inner-text{
-                    @include innerText;
-                    width: 30%;
-                    text-align: left;
-                    margin: 0;
-                    padding-right: 5%;
-                    @media screen and (max-width: 1400px) {
-                        padding-right: 0;
+                  @media screen and (max-width: 540px) {
+                      padding: 5px 10px;
+                    }
+                  .header{
+                      display: flex;
+                      justify-content: space-between;
+                      height: 8%;
+                      img{
+                          height: 100%;
+      
                       }
-                    @media screen and (max-width:1200px) {
-                        display: none;
+                      .upper-text{
+                          @include upperText;
                       }
-                }
-                .inner-text-less{
-                    display: none;
-                    @media screen and (max-width: 1200px) {
-                        display: block;
-                      }
-                    @media screen and (max-width: 540px) {
-                        display: none;
-                      }
-                }
-            }
-            .last-text{
-                @include lastText;
-                position: absolute;
-                bottom: 0;
-                left: 40%;
-                @media screen and (max-width: 540px) {
-                    margin: 0;
-                    font-size: .6em;
                   }
-            }
-        }
+                  .main-part{
+                      display: flex;
+                      justify-content: space-between;
+                      text-align: left;
+                      padding-top: 30px;
+                      align-items: flex-start;
+                      h1{
+                          @include header1; 
+                          width: 30%;
+                          text-align: left;
+                          margin: 0;
+                          padding-left: 5%;
+                          @media screen and (max-width: 900px) {
+                              font-size: 32px;
+                            }
+                          @media screen and (max-width: 375px) {
+                          font-size: 100%;
+                          }
+                      }
+                      .inner-text{
+                          @include innerText;
+                          width: 30%;
+                          text-align: left;
+                          margin: 0;
+                          padding-right: 5%;
+                          @media screen and (max-width: 1400px) {
+                              padding-right: 0;
+                            }
+                          @media screen and (max-width:1200px) {
+                              display: none;
+                            }
+                      }
+                      .inner-text-less{
+                          display: none;
+                          @media screen and (max-width: 1200px) {
+                              display: block;
+                            }
+                          @media screen and (max-width: 540px) {
+                              display: none;
+                            }
+                      }
+                  }
+                  .last-text{
+                      @include lastText;
+                      position: absolute;
+                      bottom: 0;
+                      left: 40%;
+                      @media screen and (max-width: 540px) {
+                          margin: 0;
+                          font-size: .6em;
+                        }
+                  }
+             
+          }
+        
        
     }
 
