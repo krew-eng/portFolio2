@@ -2,21 +2,26 @@
     <div class="container">
         <p class="art">Art Director  / Designer Graphic</p>
         <div class="content">
-            <div class="edu"><h2>Education</h2></div>
+            <div class="edu">
+                <h2 *ngIf='isLoaded'>Education</h2>
+            </div>
             <div class="text">
-                <p class="year">2015</p>
-                <p class="header">Creative Developer Workshop</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, iste, adipisci dicta sit amet consectetur adipisicing elit.  </p>
-                <div class="line"></div>
-                <p class="year">2017</p>
-                <p class="header">Designer Degree</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, iste, adipisci dicta sit amet consectetur adipisicing elit. </p>
-                <div class="line"></div>
-                <p class="year">2019</p>
-                <p class="header">Designer Degree</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, iste, adipisci dicta sit amet consectetur adipisicing elit. </p>
-                <p class="site">www.yoursite.com</p>
+                <div class="slide">
+                    <p class="year">2015</p>
+                    <p class="header">Creative Developer Workshop</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, iste, adipisci dicta sit amet consectetur adipisicing elit.  </p>
+                    <div class="line"></div>
+                    <p class="year">2017</p>
+                    <p class="header">Designer Degree</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, iste, adipisci dicta sit amet consectetur adipisicing elit. </p>
+                    <div class="line"></div>
+                    <p class="year">2019</p>
+                    <p class="header">Designer Degree</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, iste, adipisci dicta sit amet consectetur adipisicing elit. </p>
+                    <p class="site">www.yoursite.com</p>
+                </div>  
+            </div>
             </div>
         </div>
     </div>
-</div>
+
