@@ -17,6 +17,18 @@
         }
         .text-inside{
             width: 50%;
+            animation: flyin 3s ease-in-out forwards;
+            opacity: 0;
+            transform: scale(2);
+            filter: blur(4px);
+            transition-delay: 4s;
+            @keyframes flyin {
+             to { 
+                filter: blur(0);
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
             h1{
                 @include header1; 
                 line-height: 35px;
