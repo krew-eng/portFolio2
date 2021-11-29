@@ -2,7 +2,7 @@
 
 
 .container{
-    margin-top: 30px;
+    // margin-top: 30px;
     display: flex;
     justify-content: space-evenly;
     @media screen and (max-width: 768px) {
@@ -56,6 +56,9 @@
                     @media screen and (max-width: 900px) {
                         font-size: 32px;
                       }
+                    @media screen and (max-width: 375px) {
+                    font-size: 100%;
+                    }
                 }
                 .inner-text{
                     @include innerText;
