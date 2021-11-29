@@ -45,7 +45,11 @@ export class ProjectComponent implements OnInit, AfterViewInit{
   constructor() { }
 
   ngOnInit(): void {
-    this.isVisible = !this.isVisible;
+    this.isVisible = false;
+    setTimeout(() => {
+      this.isVisible = !this.isVisible;
+    }, 100);
+   
   }
 
   ngAfterViewInit(): void {
