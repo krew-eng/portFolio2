@@ -1,9 +1,9 @@
 
 <div class="container">
-    <div class="portfolio">
-        <div class="red"></div>
-        <div class="yellow"></div>
-        <div class="green"></div>
+    <div class="portfolio" [@toMove]='isMove ? "move" : "still"'>
+        <div class="red to-animate" ></div>
+        <div class="yellow to-animate"></div>
+        <div class="green to-animate"></div>
         <div class="back">
                         <div class="header">
                             <img src="../../assets/images/portfolio/logo.png">
@@ -21,11 +21,6 @@
                         </div>
                         <p class="last-text">www.yoursite.com</p>    
         </div>
-            
-            
-            
-            
-        
     </div>
 
     <div class="links">
