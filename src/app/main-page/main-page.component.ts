@@ -21,9 +21,9 @@ import { trigger, state, style, transition, animate, query, stagger, keyframes }
           stagger(0, [
             animate('2s', keyframes ( [
               style({  transform: 'scale(1)', offset: 0.05 }),
-              style({  transform: 'scale(1.1)', offset: 0.2 }),
-              style({  transform: 'scale(1.3)', offset: 0.5 }),
-              style({  transform: 'scale(1.1)', offset: 0.8 }),
+              style({  transform: 'scale(1.01)', offset: 0.2 }),
+              style({  transform: 'scale(1.03)', offset: 0.5 }),
+              style({  transform: 'scale(1.01)', offset: 0.8 }),
               style({  transform: 'scale(1)', offset: 0.95 }),
 
             ]))
@@ -36,9 +36,9 @@ import { trigger, state, style, transition, animate, query, stagger, keyframes }
         stagger(0, [
           animate('2s', keyframes ( [
               style({  transform: 'scale(1)', offset: 0.05 }),
-              style({  transform: 'scale(1.1)', offset: 0.2 }),
-              style({  transform: 'scale(1.3)', offset: 0.5 }),
-              style({  transform: 'scale(1.1)', offset: 0.8 }),
+              style({  transform: 'scale(1.01)', offset: 0.2 }),
+              style({  transform: 'scale(1.03)', offset: 0.5 }),
+              style({  transform: 'scale(1.01)', offset: 0.8 }),
               style({  transform: 'scale(1)', offset: 0.95 }),
           ]))
         ])
